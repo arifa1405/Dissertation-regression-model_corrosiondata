@@ -1,42 +1,50 @@
 # Corrosion Data Analysis using Regression Models
 
-This project is part of my dissertation work. It analyzes **time-series corrosion data** using regression models to highlight the science behind corrosion and understand key factors influencing it.
 
----
 
 ## Quick Start
 
-```bash
-# (Optional) create & activate a virtual environment
-# then install dependencies manually:
-pip install pandas numpy matplotlib seaborn scikit-learn
+Open the notebook below in Jupyter and run the cells sequentially:
 
-# Run the analysis script
-python NOTEBOOK/corrosion.py
+NOTEBOOK/corrosion_v2.ipynb
+
+All data preprocessing, model training, validation, and evaluation are performed inside the notebook.
 ```
 
 ---
 
 ## Repository Structure
 
-- `DATA/` → corrosion dataset (synthetic time series)  
-- `NOTEBOOK/corrosion.py` → main analysis script  
-- `README.md` → project documentation  
+DATA/ → synthetic corrosion dataset
+
+NOTEBOOK/corrosion_v1.ipynb → initial regression-based analysis
+
+NOTEBOOK/corrosion_v2.ipynb → updated machine learning / neural network workflow
+
+REQUIREMENTS.txt → Python dependencies
+
+README.md → project documentation
 
 ---
 
 ## Outputs
 
-- Correlation heatmaps of features  
-- Regression coefficients & intercept  
-- R² score to evaluate model performance  
-- Diagnostic plots for model evaluation  
+Exploratory data analysis and feature inspection
+
+Feature preprocessing and standardization
+
+Train / validation / test dataset splits
+
+Multi-Layer Perceptron (MLP) model training
+
+Training and validation performance evaluation
+
+Test-set performance assessment and generalization analysis
 
 ---
 
 ## Future Work
 
-- Build dashboard for visualization (in progress)  
 -Add more corrosion-related variables (features) for deeper analysis  
 
 
