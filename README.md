@@ -41,6 +41,12 @@ Training and validation performance evaluation
 
 Test-set performance assessment and generalization analysis
 
+An interactive Tableau dashboard was created to visualize corrosion patterns, feature relationships, and analytical insights.
+
+🔗 **View Interactive Dashboard:**
+https://public.tableau.com/app/profile/arifa.farhath.mohammedmazheralikhan/viz/CorrosionModelPredictionsandRULAnalysis/ModelPrediction
+
+
 ---
 
 ## Future Work
