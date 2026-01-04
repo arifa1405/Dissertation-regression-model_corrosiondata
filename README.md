@@ -53,4 +53,5 @@ Test-set performance assessment and generalization analysis
 ## Author
 
 **Arifa Farhath**  
-_Dissertation project on regression modeling of corrosion data_
+_Dissertation project on machine learning–based corrosion analysis_
+
