@@ -1,63 +1,104 @@
-# # Machine Learning and Neural Network–Based Corrosion Analysis
+# Machine Learning and Neural Network–Based Corrosion Analysis
+
+📌 **Dissertation Project**
+
+---
+
+## 📌 Project Overview
+
+This project investigates corrosion behavior using regression, machine learning, and neural network models applied to a synthetic corrosion dataset. The objective is to model corrosion rate as a function of environmental and operational variables and to evaluate how different modeling approaches perform in terms of accuracy, generalization, and interpretability.
+
+The analysis progresses from a statistically interpretable regression baseline to nonlinear machine learning and neural network models, supported by exploratory data analysis, diagnostics, and scenario-based evaluation.
+
+---
+
+## 🎯 Objectives
+
+- Analyze relationships between corrosion rate and key influencing variables  
+  (pH, temperature, chloride concentration, flow velocity, dissolved oxygen)
+- Establish a linear regression baseline for interpretability
+- Compare linear, tree-based, and neural network regression models
+- Evaluate model performance using standard regression metrics
+- Perform scenario-based corrosion rate prediction and Remaining Useful Life (RUL) estimation
+- Generate outputs suitable for engineering interpretation and decision support
+
+---
+
+## 🧪 Methodology
+
+- **Exploratory Data Analysis (EDA)**  
+  Distribution analysis, feature relationships, and correlation assessment
+
+- **Feature Engineering & Preprocessing**  
+  Nonlinear feature construction (e.g., pH²), scaling, and train/validation/test splitting
+
+- **Modeling Approaches**
+  - Linear Regression (baseline, interpretable)
+  - XGBoost Regressor (nonlinear interactions)
+  - Multi-Layer Perceptron (MLP) neural network using PyTorch
+
+- **Model Evaluation & Diagnostics**
+  - MAE, RMSE, R², and adjusted R²
+  - Residual analysis and prediction vs actual plots
+  - Learning-curve analysis for neural network training
+
+- **Scenario-Based Analysis**
+  - Representative operating conditions
+  - Corrosion rate prediction and Remaining Useful Life (RUL) estimation
+
+---
+
+## 📂 Repository Structure
+
+DATA/
+└── corrosion_synthetic_timeseries.csv
+
+NOTEBOOK/
+├── corrosion_v1.ipynb # Initial regression-based analysis
+└── corrosion_v2.ipynb # Machine learning and neural network workflow
+
+REQUIREMENTS.txt # Python dependencies
+README.md # Project documentation
 
 
+---
 
-## Quick Start
+## 📊 Outputs and Insights
 
-Open the notebook below in Jupyter and run the cells sequentially:
+- Exploratory analysis of corrosion-driving variables  
+- Comparative performance evaluation across regression and neural models  
+- Generalization assessment using held-out test data  
+- Scenario-based corrosion rate and RUL estimation  
+- Exportable results for downstream visualization and reporting  
+
+An interactive Tableau dashboard was created to visualize corrosion trends, model predictions, and scenario outcomes.
+
+🔗 **Interactive Dashboard:**  
+https://public.tableau.com/app/profile/arifa.farhath.mohammedmazheralikhan/viz/CorrosionModelPredictionsandRULAnalysis/ModelPrediction
+
+---
+
+## 🚀 Quick Start
+
+Open the main notebook and run all cells sequentially:
 
 NOTEBOOK/corrosion_v2.ipynb
 
-All data preprocessing, model training, validation, and evaluation are performed inside the notebook.
-```
+
+All data loading, preprocessing, modeling, evaluation, and exports are performed within the notebook.
 
 ---
 
-## Repository Structure
+## 🔮 Future Work
 
-DATA/ → synthetic corrosion dataset
-
-NOTEBOOK/corrosion_v1.ipynb → initial regression-based analysis
-
-NOTEBOOK/corrosion_v2.ipynb → updated machine learning / neural network workflow
-
-REQUIREMENTS.txt → Python dependencies
-
-README.md → project documentation
+- Include additional corrosion-related variables and domain-informed features  
+- Apply the modeling framework to real inspection or sensor datasets  
+- Extend the analysis with uncertainty quantification for risk-aware assessment  
 
 ---
 
-## Outputs
-
-Exploratory data analysis and feature inspection
-
-Feature preprocessing and standardization
-
-Train / validation / test dataset splits
-
-Multi-Layer Perceptron (MLP) model training
-
-Training and validation performance evaluation
-
-Test-set performance assessment and generalization analysis
-
-An interactive Tableau dashboard was created to visualize corrosion patterns, feature relationships, and analytical insights.
-
-🔗 **View Interactive Dashboard:**
-https://public.tableau.com/app/profile/arifa.farhath.mohammedmazheralikhan/viz/CorrosionModelPredictionsandRULAnalysis/ModelPrediction
-
-
----
-
-## Future Work
-
--Add more corrosion-related variables (features) for deeper analysis  
-
-
----
-
-## Author
+## 👤 Author
 
 **Arifa Farhath**  
-_Dissertation project on machine learning–based corrosion analysis_
+_Dissertation project on machine learning and neural network–based corrosion analysis_
 
