@@ -54,11 +54,19 @@ DATA/
 └── corrosion_synthetic_timeseries.csv
 
 NOTEBOOK/
-├── corrosion_v1.ipynb # Initial regression-based analysis
-└── corrosion_v2.ipynb # Machine learning and neural network workflow
+├── corrosion_v1.ipynb        # Initial regression-based analysis
+└── corrosion_v2.ipynb        # ML, neural network, and model comparison workflow
 
-REQUIREMENTS.txt # Python dependencies
-README.md # Project documentation
+deployment/
+├── app.py                   # Flask API for corrosion rate inference
+├── Dockerfile               # Containerized deployment configuration
+├── requirements.txt         # Deployment-specific dependencies
+└── artifacts/
+    ├── linear_reg_model.joblib   # Trained Linear Regression model
+    └── feature_order.joblib      # Feature schema for inference consistency
+
+REQUIREMENTS.txt             # Training & analysis dependencies
+README.md                    # Project documentation
 
 
 ---
@@ -89,11 +97,35 @@ All data loading, preprocessing, modeling, evaluation, and exports are performed
 
 ---
 
+🚀 Deployment & Model Serving
+
+This project includes a lightweight production-style deployment for the trained Linear Regression corrosion model using Flask and Docker.
+
+The deployment layer demonstrates how trained machine learning models can be transitioned from experimental notebooks into reusable, version-controlled inference services suitable for integration into engineering pipelines.
+
+Key Deployment Features
+
+RESTful API built using Flask
+
+Model and feature-order persistence using joblib
+
+Input validation and schema enforcement
+
+Containerized deployment using Docker for portability
+
+Separation of training (notebook) and inference (deployment) concerns
+
+The deployed API accepts corrosion-driving parameters and returns predicted corrosion rate values in real time.
+
 ## 🔮 Future Work
 
 - Include additional corrosion-related variables and domain-informed features  
 - Apply the modeling framework to real inspection or sensor datasets  
-- Extend the analysis with uncertainty quantification for risk-aware assessment  
+- Extend the analysis with uncertainty quantification for risk-aware assessment
+-  Extend the deployed API with advanced models (XGBoost, neural networks)
+- Integrate uncertainty estimation for risk-aware corrosion predictions
+- Connect real-time sensor streams to the inference service
+
 
 ---
 
