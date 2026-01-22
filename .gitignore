@@ -10,4 +10,4 @@ DATA/corrosion_full_with_predictions.csv
 # Ignore VS Code / OS system files
 .vscode/
 .DS_Store
-Thumbs.db
+Thumbs.dbcorrosion_full_with_predictions.csv
